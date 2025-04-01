@@ -1,8 +1,8 @@
 import pandas as pd
-from superflue.utils.batch_utils import process_batch_with_retry, chunk_list
-from superflue.config import EVALUATION_DIR, LOG_DIR, LOG_LEVEL
-from superflue.utils.logging_utils import setup_logger
-from superflue.code.extraction_prompts import qa_extraction_prompt, qa_evaluate_answer
+from flame.utils.batch_utils import process_batch_with_retry, chunk_list
+from flame.config import EVALUATION_DIR, LOG_DIR, LOG_LEVEL
+from flame.utils.logging_utils import setup_logger
+from flame.code.extraction_prompts import qa_extraction_prompt, qa_evaluate_answer
 from tqdm import tqdm
 
 logger = setup_logger(

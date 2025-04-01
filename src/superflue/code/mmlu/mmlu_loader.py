@@ -6,8 +6,8 @@ from typing import List, Dict, Optional, Union, Tuple
 
 import pandas as pd
 from datasets import load_dataset
-from superflue.code.mmlu.mmlu_constants import ECONOMICS_SUBJECTS, SPLITS
-from superflue.config import LOG_DIR, LOG_LEVEL
+from flame.code.mmlu.mmlu_constants import ECONOMICS_SUBJECTS, SPLITS
+from flame.config import LOG_DIR, LOG_LEVEL
 
 # Configure logging to show on console with timestamp and level
 logging.basicConfig(

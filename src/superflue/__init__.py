@@ -1,4 +1,4 @@
-from superflue.config import (
+from flame.config import (
     LOG_DIR,
     DATA_DIR,
     ROOT_DIR,
@@ -6,10 +6,10 @@ from superflue.config import (
     PACKAGE_DIR,
     LOG_LEVEL,
 )
-from superflue.utils.logging_utils import setup_logger
+from flame.utils.logging_utils import setup_logger
 
 logger = setup_logger(
-    name=__name__, log_file=LOG_DIR / "superflue.log", level=LOG_LEVEL
+    name=__name__, log_file=LOG_DIR / "flame.log", level=LOG_LEVEL
 )
 
 

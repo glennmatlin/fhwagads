@@ -1,7 +1,7 @@
 from litellm import batch_completion
-# from superflue.code.tokens import tokens
-from superflue.utils.logging_utils import setup_logger
-from superflue.config import LOG_LEVEL, LOG_DIR
+# from flame.code.tokens import tokens
+from flame.utils.logging_utils import setup_logger
+from flame.config import LOG_LEVEL, LOG_DIR
 
 logger = setup_logger(
     name="batch_utils",

@@ -1,35 +1,35 @@
-from superflue.code.fpb.fpb_evaluate import fpb_evaluate
-from superflue.code.numclaim.numclaim_evaluate import numclaim_evaluate
-from superflue.code.fnxl.fnxl_evaluate import fnxl_evaluate
-from superflue.code.fomc.fomc_evaluate import fomc_evaluate
-from superflue.code.finbench.finbench_evaluate import finbench_evaluate
-from superflue.code.finer.finer_evaluate import finer_evaluate
-from superflue.code.finentity.finentity_evaluate import finentity_evaluate
-from superflue.code.headlines.headlines_evaluate import headlines_evaluate
-from superflue.code.fiqa.fiqa_task1_evaluate import fiqa_task1_evaluate
-from superflue.code.fiqa.fiqa_task2_evaluate import fiqa_task2_evaluate
-from superflue.code.edtsum.edtsum_evaluate import edtsum_evaluate
-from superflue.code.banking77.banking77_evaluate import banking77_evaluate
-from superflue.code.finred.finred_evaluate import finred_evaluate
-from superflue.code.causal_classification.causal_classification_evaluate import causal_classification_evaluate
-from superflue.code.subjectiveqa.subjectiveqa_evaluate import subjectiveqa_evaluate
-from superflue.code.ectsum.ectsum_evaluate import ectsum_evaluate
-from superflue.code.refind.refind_evaluate import refind_evaluate
-from superflue.code.convfinqa.convfinqa_evaluate import convfinqa_evaluate
-from superflue.code.finqa.finqa_evaluate import finqa_evaluate
-from superflue.code.tatqa.tatqa_evaluate import tatqa_evaluate
+from flame.code.fpb.fpb_evaluate import fpb_evaluate
+from flame.code.numclaim.numclaim_evaluate import numclaim_evaluate
+from flame.code.fnxl.fnxl_evaluate import fnxl_evaluate
+from flame.code.fomc.fomc_evaluate import fomc_evaluate
+from flame.code.finbench.finbench_evaluate import finbench_evaluate
+from flame.code.finer.finer_evaluate import finer_evaluate
+from flame.code.finentity.finentity_evaluate import finentity_evaluate
+from flame.code.headlines.headlines_evaluate import headlines_evaluate
+from flame.code.fiqa.fiqa_task1_evaluate import fiqa_task1_evaluate
+from flame.code.fiqa.fiqa_task2_evaluate import fiqa_task2_evaluate
+from flame.code.edtsum.edtsum_evaluate import edtsum_evaluate
+from flame.code.banking77.banking77_evaluate import banking77_evaluate
+from flame.code.finred.finred_evaluate import finred_evaluate
+from flame.code.causal_classification.causal_classification_evaluate import causal_classification_evaluate
+from flame.code.subjectiveqa.subjectiveqa_evaluate import subjectiveqa_evaluate
+from flame.code.ectsum.ectsum_evaluate import ectsum_evaluate
+from flame.code.refind.refind_evaluate import refind_evaluate
+from flame.code.convfinqa.convfinqa_evaluate import convfinqa_evaluate
+from flame.code.finqa.finqa_evaluate import finqa_evaluate
+from flame.code.tatqa.tatqa_evaluate import tatqa_evaluate
 from pathlib import Path
-from superflue.code.mmlu.mmlu_evaluate import mmlu_evaluate
-# from superflue.code.bizbench.bizbench_evaluate import bizbench_evaluate
-# from superflue.code.econlogicqa.econlogicqa_evaluate import econlogicqa_evaluate
-# from superflue.code.causal_detection.cd_evaluate import cd_evaluate
-from superflue.code.causal_detection.casual_detection_evaluate import causal_detection_evaluate
+from flame.code.mmlu.mmlu_evaluate import mmlu_evaluate
+# from flame.code.bizbench.bizbench_evaluate import bizbench_evaluate
+# from flame.code.econlogicqa.econlogicqa_evaluate import econlogicqa_evaluate
+# from flame.code.causal_detection.cd_evaluate import cd_evaluate
+from flame.code.causal_detection.casual_detection_evaluate import causal_detection_evaluate
 
 import pandas as pd
 from time import time
 from datetime import date
-from superflue.utils.logging_utils import setup_logger
-from superflue.config import LOG_DIR, RESULTS_DIR, LOG_LEVEL, EVALUATION_DIR
+from flame.utils.logging_utils import setup_logger
+from flame.config import LOG_DIR, RESULTS_DIR, LOG_LEVEL, EVALUATION_DIR
 from pathlib import Path
 
 logger = setup_logger(

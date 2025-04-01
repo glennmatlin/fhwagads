@@ -1,10 +1,10 @@
-from superflue.utils.batch_utils import process_batch_with_retry, chunk_list
+from flame.utils.batch_utils import process_batch_with_retry, chunk_list
 import pandas as pd
 from tqdm import tqdm
 from datasets import load_dataset
-from superflue.code.inference_prompts import fomc_prompt
-from superflue.utils.logging_utils import setup_logger
-from superflue.config import RESULTS_DIR, LOG_DIR, LOG_LEVEL
+from flame.code.inference_prompts import fomc_prompt
+from flame.utils.logging_utils import setup_logger
+from flame.config import RESULTS_DIR, LOG_DIR, LOG_LEVEL
 
 logger = setup_logger(
     name="fomc_inference", 

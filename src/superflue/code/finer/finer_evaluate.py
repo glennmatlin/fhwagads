@@ -2,11 +2,11 @@ import pandas as pd
 import numpy as np
 import json
 import re
-from superflue.utils.batch_utils import chunk_list, process_batch_with_retry
+from flame.utils.batch_utils import chunk_list, process_batch_with_retry
 from sklearn.metrics import precision_score, recall_score, f1_score, accuracy_score
-from superflue.utils.logging_utils import setup_logger
-from superflue.config import EVALUATION_DIR, LOG_DIR, LOG_LEVEL
-from superflue.code.extraction_prompts import finer_extraction_prompt
+from flame.utils.logging_utils import setup_logger
+from flame.config import EVALUATION_DIR, LOG_DIR, LOG_LEVEL
+from flame.code.extraction_prompts import finer_extraction_prompt
 from tqdm import tqdm
  
 logger = setup_logger(

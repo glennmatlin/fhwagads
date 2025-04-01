@@ -6,10 +6,10 @@ from datasets import load_dataset
 from together import Together
 from tqdm import tqdm
 
-from superflue.config import LOG_DIR, LOG_LEVEL, RESULTS_DIR
-from superflue.code.prompts_fromferrari import econlogicqa_prompt
-from superflue.code.tokens import tokens
-from superflue.utils.logging_utils import setup_logger
+from flame.config import LOG_DIR, LOG_LEVEL, RESULTS_DIR
+from flame.code.prompts_fromferrari import econlogicqa_prompt
+from flame.code.tokens import tokens
+from flame.utils.logging_utils import setup_logger
 
 logger = setup_logger(
     name="econlogicqa_inference",

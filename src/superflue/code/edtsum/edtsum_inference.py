@@ -1,11 +1,11 @@
 import pandas as pd
 from datasets import load_dataset
-from superflue.code.inference_prompts import edtsum_prompt
-from superflue.utils.logging_utils import setup_logger
-from superflue.code.tokens import tokens
-from superflue.config import LOG_DIR, LOG_LEVEL
+from flame.code.inference_prompts import edtsum_prompt
+from flame.utils.logging_utils import setup_logger
+from flame.code.tokens import tokens
+from flame.config import LOG_DIR, LOG_LEVEL
 from tqdm import tqdm
-from superflue.utils.batch_utils import chunk_list, process_batch_with_retry
+from flame.utils.batch_utils import chunk_list, process_batch_with_retry
 
 logger = setup_logger(
     name="edtsum_inference", log_file=LOG_DIR / "edtsum_inference.log", level=LOG_LEVEL

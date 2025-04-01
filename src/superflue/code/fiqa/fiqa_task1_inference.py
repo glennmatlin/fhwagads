@@ -1,9 +1,9 @@
 import pandas as pd
 from datasets import load_dataset
-from superflue.utils.batch_utils import process_batch_with_retry, chunk_list
-from superflue.code.inference_prompts import fiqa_task1_prompt
-from superflue.utils.logging_utils import setup_logger
-from superflue.config import RESULTS_DIR, LOG_DIR, LOG_LEVEL
+from flame.utils.batch_utils import process_batch_with_retry, chunk_list
+from flame.code.inference_prompts import fiqa_task1_prompt
+from flame.utils.logging_utils import setup_logger
+from flame.config import RESULTS_DIR, LOG_DIR, LOG_LEVEL
 from tqdm import tqdm
 
 # Set up logger

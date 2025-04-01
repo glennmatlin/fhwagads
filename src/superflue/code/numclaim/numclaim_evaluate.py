@@ -2,10 +2,10 @@ from datetime import date
 import pandas as pd
 from sklearn.metrics import precision_score, recall_score, f1_score, accuracy_score
 from pathlib import Path
-from superflue.utils.logging_utils import setup_logger
-from superflue.utils.batch_utils import chunk_list, process_batch_with_retry
-from superflue.code.extraction_prompts import numclaim_extraction_prompt
-from superflue.config import LOG_DIR, LOG_LEVEL
+from flame.utils.logging_utils import setup_logger
+from flame.utils.batch_utils import chunk_list, process_batch_with_retry
+from flame.code.extraction_prompts import numclaim_extraction_prompt
+from flame.config import LOG_DIR, LOG_LEVEL
 from tqdm import tqdm
 
 logger = setup_logger(

@@ -3,12 +3,12 @@ import argparse
 import numpy as np
 import pandas as pd
 from sklearn.metrics import accuracy_score, f1_score
-from superflue.config import LOG_LEVEL, RESULTS_DIR, LOG_DIR
-from superflue.utils.logging_utils import setup_logger
+from flame.config import LOG_LEVEL, RESULTS_DIR, LOG_DIR
+from flame.utils.logging_utils import setup_logger
 
 import nltk
 
-from superflue.utils.results.decode import sentiment_analysis_decode
+from flame.utils.results.decode import sentiment_analysis_decode
 
 nltk.download("punkt")
 

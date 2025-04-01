@@ -10,10 +10,10 @@ import pandas as pd
 from tqdm import tqdm
 import litellm
 
-from superflue.code.mmlu.mmlu_loader import MMLULoader
-from superflue.code.tokens import tokens
-from superflue.utils.logging_utils import setup_logger
-from superflue.config import RESULTS_DIR, LOG_DIR, LOG_LEVEL
+from flame.code.mmlu.mmlu_loader import MMLULoader
+from flame.code.tokens import tokens
+from flame.utils.logging_utils import setup_logger
+from flame.config import RESULTS_DIR, LOG_DIR, LOG_LEVEL
 
 logger = setup_logger(
     name="mmlu_inference",

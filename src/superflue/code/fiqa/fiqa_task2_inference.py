@@ -3,11 +3,11 @@ import pandas as pd
 from datetime import date
 from datasets import load_dataset
 from litellm import completion 
-from superflue.utils.batch_utils import process_batch_with_retry, chunk_list
-from superflue.code.inference_prompts import fiqa_task2_prompt
-from superflue.code.tokens import tokens
-from superflue.utils.logging_utils import setup_logger
-from superflue.config import RESULTS_DIR, LOG_DIR, LOG_LEVEL
+from flame.utils.batch_utils import process_batch_with_retry, chunk_list
+from flame.code.inference_prompts import fiqa_task2_prompt
+from flame.code.tokens import tokens
+from flame.utils.logging_utils import setup_logger
+from flame.config import RESULTS_DIR, LOG_DIR, LOG_LEVEL
 import litellm
 from typing import Dict, Any, List, Optional, Tuple
 from tqdm import tqdm

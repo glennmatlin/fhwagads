@@ -2,7 +2,7 @@ import io
 import zipfile
 
 import requests
-# TODO: (Glenn) superflue.utils.miscellaneous is one function -- it can be refactored elsewhere and deleted
+# TODO: (Glenn) flame.utils.miscellaneous is one function -- it can be refactored elsewhere and deleted
 
 
 def download_zip_content(url):

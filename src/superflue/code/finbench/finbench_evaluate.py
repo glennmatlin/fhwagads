@@ -1,9 +1,9 @@
 import pandas as pd
 from sklearn.metrics import accuracy_score, precision_recall_fscore_support
-from superflue.utils.logging_utils import setup_logger
-from superflue.code.extraction_prompts import finbench_extraction_prompt
-from superflue.config import EVALUATION_DIR, LOG_DIR, LOG_LEVEL
-from superflue.utils.batch_utils import chunk_list, process_batch_with_retry
+from flame.utils.logging_utils import setup_logger
+from flame.code.extraction_prompts import finbench_extraction_prompt
+from flame.config import EVALUATION_DIR, LOG_DIR, LOG_LEVEL
+from flame.utils.batch_utils import chunk_list, process_batch_with_retry
 from tqdm import tqdm
 
 # Configure logging

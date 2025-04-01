@@ -1,8 +1,8 @@
 import pandas as pd
 from evaluate import load
 import numpy as np
-from superflue.utils.logging_utils import setup_logger
-from superflue.config import EVALUATION_DIR, LOG_DIR, LOG_LEVEL
+from flame.utils.logging_utils import setup_logger
+from flame.config import EVALUATION_DIR, LOG_DIR, LOG_LEVEL
 
 bertscore = load("bertscore")
 

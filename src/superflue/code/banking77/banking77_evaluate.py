@@ -1,9 +1,9 @@
 import pandas as pd
 from sklearn.metrics import accuracy_score, precision_recall_fscore_support
-from superflue.utils.logging_utils import setup_logger
-from superflue.config import LOG_DIR, LOG_LEVEL
-from superflue.code.extraction_prompts import banking_77_extraction_prompt, banking77_label_map
-from superflue.utils.batch_utils import chunk_list, process_batch_with_retry
+from flame.utils.logging_utils import setup_logger
+from flame.config import LOG_DIR, LOG_LEVEL
+from flame.code.extraction_prompts import banking_77_extraction_prompt, banking77_label_map
+from flame.utils.batch_utils import chunk_list, process_batch_with_retry
 from tqdm import tqdm
 
 logger = setup_logger(

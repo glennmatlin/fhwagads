@@ -1,10 +1,10 @@
 import time
 import pandas as pd
 from datasets import load_dataset
-from superflue.code.inference_prompts import subjectiveqa_prompt
-from superflue.utils.logging_utils import setup_logger
-from superflue.config import LOG_LEVEL, LOG_DIR, RESULTS_DIR
-from superflue.utils.batch_utils import chunk_list, process_batch_with_retry
+from flame.code.inference_prompts import subjectiveqa_prompt
+from flame.utils.logging_utils import setup_logger
+from flame.config import LOG_LEVEL, LOG_DIR, RESULTS_DIR
+from flame.utils.batch_utils import chunk_list, process_batch_with_retry
 import random
 logger = setup_logger(
     name="subjectiveqa_inference",

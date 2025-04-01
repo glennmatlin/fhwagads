@@ -6,8 +6,8 @@ from typing import Dict, List, Optional, Tuple
 
 import pandas as pd
 from sklearn.metrics import accuracy_score
-from superflue.utils.logging_utils import setup_logger
-from superflue.config import EVALUATION_DIR, LOG_DIR, LOG_LEVEL
+from flame.utils.logging_utils import setup_logger
+from flame.config import EVALUATION_DIR, LOG_DIR, LOG_LEVEL
 
 logger = setup_logger(
     name="mmlu_evaluation",

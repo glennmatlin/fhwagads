@@ -45,7 +45,7 @@ def calculate_accuracy_and_stats(file_path, tolerance=0.01):
         "Tolerance Accuracy": tolerance_accuracy,
     }
 
-# file_path = "/home/thans/Documents/Study/fall24/cs7643/superflue_cs7643/output/results/bizbench/bizbench_meta-llama/Meta-Llama-3-70B-Instruct-Turbo_02_12_2024.csv"
+# file_path = "/home/thans/Documents/Study/fall24/cs7643/flame_cs7643/output/results/bizbench/bizbench_meta-llama/Meta-Llama-3-70B-Instruct-Turbo_02_12_2024.csv"
 stats = calculate_accuracy_and_stats(file_path)
 for metric, value in stats.items():
     print(f"{metric}: {value:.4f}")

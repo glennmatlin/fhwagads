@@ -2,12 +2,12 @@ import yaml
 import argparse
 from dotenv import load_dotenv
 import os
-from superflue.code.inference import main as inference
+from flame.code.inference import main as inference
 from huggingface_hub import login
-from superflue.code.evaluate import main as evaluate
+from flame.code.evaluate import main as evaluate
 
 def parse_arguments():
-    parser = argparse.ArgumentParser(description="SuperFLUE")
+    parser = argparse.ArgumentParser(description="FLaME")
     parser.add_argument("--config", type=str, help="Path to the YAML config file.")
     parser.add_argument("--dataset", type=str, help="Name of the dataset to use.")
     parser.add_argument("--mode", type=str, choices=["inference", "evaluate"], help="Mode to run: inference or evaluate.")
@@ -31,7 +31,7 @@ def parse_arguments():
     parser.add_argument(
         "--prompt_format",
         type=str,
-        default="superflue",
+        default="flame",
         help="Version of the prompt to use",
     )
     return parser.parse_args()
@@ -65,7 +65,7 @@ if __name__ == "__main__":
         "repetition_penalty": 1.0,
         "max_tokens": 128,
         "batch_size": 10,
-        "prompt_format": "superflue",
+        "prompt_format": "flame",
     }
 
     args2 = parse_arguments()

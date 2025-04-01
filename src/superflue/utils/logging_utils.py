@@ -2,7 +2,7 @@ import logging
 import os
 from logging.handlers import RotatingFileHandler
 from pathlib import Path
-from superflue.config import LOG_LEVEL
+from flame.config import LOG_LEVEL
 
 
 def setup_logger(name, log_file, level=LOG_LEVEL):

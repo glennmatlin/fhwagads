@@ -2,11 +2,11 @@ import pandas as pd
 from datetime import date
 from tqdm import tqdm
 from sklearn.metrics import accuracy_score, precision_recall_fscore_support
-from superflue.code.tokens import tokens
-from superflue.utils.logging_utils import setup_logger
-from superflue.code.extraction_prompts import finred_extraction_prompt, finred_possible_relationships
-from superflue.utils.batch_utils import process_batch_with_retry, chunk_list
-from superflue.config import EVALUATION_DIR, LOG_DIR, LOG_LEVEL
+from flame.code.tokens import tokens
+from flame.utils.logging_utils import setup_logger
+from flame.code.extraction_prompts import finred_extraction_prompt, finred_possible_relationships
+from flame.utils.batch_utils import process_batch_with_retry, chunk_list
+from flame.config import EVALUATION_DIR, LOG_DIR, LOG_LEVEL
 
 # Configure logging
 logger = setup_logger(

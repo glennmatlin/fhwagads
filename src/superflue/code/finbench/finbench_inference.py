@@ -1,10 +1,10 @@
 import pandas as pd
 from datasets import load_dataset
 from tqdm import tqdm
-from superflue.code.inference_prompts import finbench_prompt
-from superflue.utils.logging_utils import setup_logger
-from superflue.utils.batch_utils import chunk_list, process_batch_with_retry
-from superflue.config import RESULTS_DIR, LOG_DIR, LOG_LEVEL
+from flame.code.inference_prompts import finbench_prompt
+from flame.utils.logging_utils import setup_logger
+from flame.utils.batch_utils import chunk_list, process_batch_with_retry
+from flame.config import RESULTS_DIR, LOG_DIR, LOG_LEVEL
 
 logger = setup_logger(
     name="finbench_inference",

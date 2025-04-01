@@ -2,10 +2,10 @@ import pandas as pd
 from tqdm import tqdm
 from datasets import load_dataset
 from datetime import date
-from superflue.code.inference_prompts import fpb_prompt
-from superflue.utils.logging_utils import setup_logger
-from superflue.config import RESULTS_DIR, LOG_DIR, LOG_LEVEL
-from superflue.utils.batch_utils import process_batch_with_retry, chunk_list
+from flame.code.inference_prompts import fpb_prompt
+from flame.utils.logging_utils import setup_logger
+from flame.config import RESULTS_DIR, LOG_DIR, LOG_LEVEL
+from flame.utils.batch_utils import process_batch_with_retry, chunk_list
 
 logger = setup_logger(
     name="fpb_inference", log_file=LOG_DIR / "fpb_inference.log", level=LOG_LEVEL

@@ -1,11 +1,11 @@
 import pandas as pd
 from datetime import date
-from superflue.utils.batch_utils import process_batch_with_retry, chunk_list
-from superflue.code.extraction_prompts import fiqa_1_extraction_prompt
+from flame.utils.batch_utils import process_batch_with_retry, chunk_list
+from flame.code.extraction_prompts import fiqa_1_extraction_prompt
 from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score
 import re
-from superflue.config import EVALUATION_DIR, LOG_DIR, LOG_LEVEL
-from superflue.utils.logging_utils import setup_logger
+from flame.config import EVALUATION_DIR, LOG_DIR, LOG_LEVEL
+from flame.utils.logging_utils import setup_logger
 from tqdm import tqdm
 import numpy as np
 

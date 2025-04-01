@@ -1,10 +1,10 @@
 import pandas as pd
 from sklearn.metrics import accuracy_score, precision_recall_fscore_support, classification_report
-from superflue.utils.logging_utils import setup_logger
-from superflue.config import EVALUATION_DIR, LOG_DIR, LOG_LEVEL
+from flame.utils.logging_utils import setup_logger
+from flame.config import EVALUATION_DIR, LOG_DIR, LOG_LEVEL
 from tqdm import tqdm
-from superflue.code.extraction_prompts import causal_detection_extraction_prompt
-from superflue.utils.batch_utils import chunk_list, process_batch_with_retry
+from flame.code.extraction_prompts import causal_detection_extraction_prompt
+from flame.utils.batch_utils import chunk_list, process_batch_with_retry
 import ast
 
 logger = setup_logger(
