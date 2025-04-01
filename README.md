@@ -92,7 +92,7 @@ This repository is organized into three primary components: Data Management, Inf
 
 ### 1. Data Management
 
-The `data` folder in this repository contains multiple subfolders, each representing a different dataset. For each dataset, there is a corresponding script named `huggify_{dataset}.py`. These scripts are designed to upload the raw data for each dataset to the [gtfintech lab&#39;s repository on Hugging Face](https://huggingface.co/anon_organization).
+The `data` folder in this repository contains multiple subfolders, each representing a different dataset. For each dataset, there is a corresponding script named `huggify_{dataset}.py`. These scripts are designed to upload the raw data for each dataset to the repository on Hugging Face (https://huggingface.co/anon_organization).
 
 #### How to Use the Data Upload Script
 
