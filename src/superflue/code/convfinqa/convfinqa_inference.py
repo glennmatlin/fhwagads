@@ -14,7 +14,7 @@ logger = setup_logger(
 def convfinqa_inference(args):
     task = args.dataset.strip('“”"')
     logger.info(f"Starting inference for {task} using model {args.model}.")
-    dataset = load_dataset("gtfintechlab/convfinqa", trust_remote_code=True)
+    dataset = load_dataset("anon_organization/convfinqa", trust_remote_code=True)
     
     test_data = dataset["test"]  # type: ignore
     all_texts = [f"{' '.join(data['pre_text'])} {' '.join(data['post_text'])} {' '.join([' '.join(map(str, row)) for row in data['table_ori']])} Question 0: {str(data['question_0']) if data['question_0'] is not None else ""} Answer: {str(data['answer_0']) if data['answer_0'] is not None else ""}. Now answer the following question: {str(data['question_1'])}" for data in test_data]  # type: ignore

@@ -22,7 +22,7 @@ logger = setup_logger(
 
 def fiqa_task2_inference(args):
     # Load dataset and initialize lists for results
-    dataset = load_dataset("gtfintechlab/FiQA_Task2", trust_remote_code=True)
+    dataset = load_dataset("anon_organization/FiQA_Task2", trust_remote_code=True)
 
     test_data = dataset["test"] # type: ignore
     all_questions = [data["question"] for data in test_data] # type: ignore

@@ -15,7 +15,7 @@ logger = setup_logger(
 def finentity_inference(args):
     task = args.dataset.strip('“”"')
     logger.info(f"Starting inference for {task} using model {args.model}.")
-    dataset = load_dataset("gtfintechlab/finentity", "5768", trust_remote_code=True)
+    dataset = load_dataset("anon_organization/finentity", "5768", trust_remote_code=True)
 
     # Extract sentences and actual labels
     sentences = [row["content"] for row in dataset["test"]]  # type: ignore

@@ -12,7 +12,7 @@ logger = setup_logger(
 
 # TODO: Use logging helper function; get the HF creds from .env
 HUGGINGFACEHUB_API_TOKEN = os.environ["HUGGINGFACEHUB_API_TOKEN"]
-HF_ORGANIZATION = "gtfintechlab"
+HF_ORGANIZATION = "anon_organization"
 DATASET = "CausalDetection"
 login(HUGGINGFACEHUB_API_TOKEN)
 

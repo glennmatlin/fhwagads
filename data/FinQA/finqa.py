@@ -6,7 +6,7 @@ from flame.utils.process_qa import process_qa_pairs
 from flame.utils.zip_to_csv import zip_to_csv
 from flame.config import DATA_DIR, LOG_LEVEL
 
-HF_ORGANIZATION = "gtfintechlab"
+HF_ORGANIZATION = "anon_organization"
 DATASET = "finqa"
 
 logging.basicConfig(level=LOG_LEVEL)

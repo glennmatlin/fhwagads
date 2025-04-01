@@ -156,8 +156,8 @@ def huggify_data_convfinqa(task_name="convfinqa", namespace="Yangvivian"):
 
 
 def main():
-    # HF_ORGANIZATION = "gtfintechlab"
-    namespace = "gtfintechlab"
+    # HF_ORGANIZATION = "anon_organization"
+    namespace = "anon_organization"
     task_name = "finqa"
     hf_dataset = huggify_data_finqa(task_name=task_name, namespace=namespace)
     hf_dataset = huggify_data_convfinqa(task_name=task_name, namespace=namespace)
@@ -169,7 +169,7 @@ def main():
     else:
         print("Failed to create datasets.")
     # Example usage
-    namespace = "Yangvivian"  # change to gtfintechlab if necessary
+    namespace = "Yangvivian"  # change to anon_organization if necessary
     task_name = "convfinqa"
     # REPO_ID = ""
 

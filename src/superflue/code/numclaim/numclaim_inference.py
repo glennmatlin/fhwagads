@@ -16,7 +16,7 @@ logger = setup_logger(
 def numclaim_inference(args):
     task = args.dataset.strip('“”"')
     logger.info(f"Starting inference for {task} using model {args.model}.")
-    dataset = load_dataset("gtfintechlab/Numclaim", trust_remote_code=True)
+    dataset = load_dataset("anon_organization/Numclaim", trust_remote_code=True)
 
     llm_responses = []
     complete_responses = []

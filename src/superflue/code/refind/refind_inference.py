@@ -17,7 +17,7 @@ logger = setup_logger(
 def refind_inference(args):
     task = args.dataset.strip('“”"')
     logger.info(f"Starting inference for {task} using model {args.model}.")
-    dataset = load_dataset("gtfintechlab/ReFinD", trust_remote_code=True)
+    dataset = load_dataset("anon_organization/ReFinD", trust_remote_code=True)
 
     test_data = dataset["test"]  # type: ignore
     all_sentences = [' '.join(['[ENT1]'] + sample['token'][sample['e1_start']:sample['e1_end']] + ['[/ENT1]'] + sample['token'][sample['e1_end']+1:sample['e2_start']] + ['[ENT2]'] + sample['token'][sample['e2_start']:sample['e2_end']] + ['[/ENT2]']) for sample in test_data]  # type: ignore

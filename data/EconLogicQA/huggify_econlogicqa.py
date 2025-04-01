@@ -6,7 +6,7 @@ from dotenv import dotenv_values
 from flame.config import DATA_DIR, LOG_LEVEL
 from huggingface_hub import login
 
-HF_ORGANIZATION = "gtfintechlab"
+HF_ORGANIZATION = "anon_organization"
 DATASET = "EconLogicQA"
 
 logging.basicConfig(level=LOG_LEVEL)

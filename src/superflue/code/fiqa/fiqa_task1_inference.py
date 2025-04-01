@@ -16,7 +16,7 @@ logger = setup_logger(
 def fiqa_task1_inference(args):
     task = args.dataset.strip('“”"')
     logger.info(f"Starting inference for {task} using model {args.model}.")
-    dataset = load_dataset("gtfintechlab/FiQA_Task1", trust_remote_code=True)
+    dataset = load_dataset("anon_organization/FiQA_Task1", trust_remote_code=True)
 
     test_data = dataset["test"] # type: ignore
     all_texts = [f"Sentence: {data['sentence']}. Snippets: {data['snippets']}. Target aspect: {data['target']}" for data in test_data] # type: ignore

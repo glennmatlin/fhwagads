@@ -15,7 +15,7 @@ logger = setup_logger(
 def finer_inference(args):
     task = args.dataset.strip('“”"')
     logger.info(f"Starting inference for {task} using model {args.model}.")
-    dataset = load_dataset("gtfintechlab/finer-ord-bio", trust_remote_code=True)
+    dataset = load_dataset("anon_organization/finer-ord-bio", trust_remote_code=True)
 
     sentences = [row["tokens"] for row in dataset["test"]]  # type: ignore
     actual_labels = [row["tags"] for row in dataset["test"]]  # type: ignore

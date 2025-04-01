@@ -7,7 +7,7 @@ from flame.utils.LabelMapper import LabelMapper
 from flame.config import DATA_DIR, LOG_LEVEL
 
 HUGGINGFACEHUB_API_TOKEN = os.environ.get("HUGGINGFACEHUB_API_TOKEN")
-HF_ORGANIZATION = "gtfintechlab"
+HF_ORGANIZATION = "anon_organization"
 DATASET = "Numclaim"
 
 login(HUGGINGFACEHUB_API_TOKEN)

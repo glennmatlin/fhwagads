@@ -11,7 +11,7 @@ logger = setup_logger(
     name=__name__, log_file=LOG_DIR / "convfinqahuggify.log", level=LOG_LEVEL
 )
 
-HF_ORGANIZATION = "gtfintechlab"
+HF_ORGANIZATION = "anon_organization"
 DATASET = "convfinqa"
 
 

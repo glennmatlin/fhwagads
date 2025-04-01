@@ -16,7 +16,7 @@ def causal_classification_inference(args):
     task = args.dataset.strip('“”"')
     logger.info(f"Starting inference for {task} using model {args.model}.")
 
-    dataset = load_dataset("gtfintechlab/CausalClassification", trust_remote_code=True)
+    dataset = load_dataset("anon_organization/CausalClassification", trust_remote_code=True)
 
     texts = [row["text"] for row in dataset["test"]]  # type: ignore
     actual_labels = [row["label"] for row in dataset["test"]]  # type: ignore

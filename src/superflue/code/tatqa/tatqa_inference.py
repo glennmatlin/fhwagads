@@ -13,7 +13,7 @@ logger = setup_logger(
 def tatqa_inference(args):
     task = args.dataset.strip('“”"')
     logger.info(f"Starting inference for {task} using model {args.model}.")    
-    dataset = load_dataset("gtfintechlab/TATQA", trust_remote_code=True)
+    dataset = load_dataset("anon_organization/TATQA", trust_remote_code=True)
     
     test_data = dataset["test"]  # type: ignore
     all_texts = [f"{data['text']} {data['query']}" for data in test_data]  # type: ignore

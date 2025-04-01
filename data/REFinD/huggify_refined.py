@@ -16,7 +16,7 @@ if str(SRC_DIRECTORY) not in sys.path:
  
 # Environment variables for Hugging Face authentication
 HF_TOKEN = os.getenv("HF_TOKEN")
-HF_ORGANIZATION = "gtfintechlab"
+HF_ORGANIZATION = "anon_organization"
 DATASET = "REFinD"
  
 # Logging configuration

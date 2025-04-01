@@ -14,7 +14,7 @@ if str(SRC_DIRECTORY) not in sys.path:
 
 
 HF_TOKEN = os.environ["HF_TOKEN"]
-HF_ORGANIZATION = "gtfintechlab"
+HF_ORGANIZATION = "anon_organization"
 DATASET = "TATQA"
 login(HF_TOKEN)
 

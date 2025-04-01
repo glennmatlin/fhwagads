@@ -8,7 +8,7 @@ from flame.config import DATA_DIR, LOG_LEVEL
 
 
 HUGGINGFACEHUB_API_TOKEN = os.environ["HUGGINGFACEHUB_API_TOKEN"]
-HF_ORGANIZATION = "gtfintechlab"
+HF_ORGANIZATION = "anon_organization"
 DATASET = "finentity"
 login(HUGGINGFACEHUB_API_TOKEN)
 

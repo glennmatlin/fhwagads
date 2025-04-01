@@ -15,7 +15,7 @@ logger = setup_logger(
 def finred_inference(args):
     task = args.dataset.strip('“”"')
     logger.info(f"Starting inference for {task} using model {args.model}.")
-    dataset = load_dataset("gtfintechlab/FinRed", trust_remote_code=True)
+    dataset = load_dataset("anon_organization/FinRed", trust_remote_code=True)
 
     # Initialize lists to store sentences, actual labels, model responses, and complete responses
     llm_responses = []

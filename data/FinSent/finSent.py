@@ -6,7 +6,7 @@ from flame.config import DATA_DIR, LOG_LEVEL
 
 os.environ["HF_HOME"] = ""
 HUGGINGFACEHUB_API_TOKEN = ""
-HF_ORGANIZATION = "gtfintechlab"
+HF_ORGANIZATION = "anon_organization"
 DATASET = "FinSent"
 login(HUGGINGFACEHUB_API_TOKEN)
 

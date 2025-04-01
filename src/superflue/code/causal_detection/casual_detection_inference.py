@@ -14,7 +14,7 @@ def casual_detection_inference(args):
     task = args.dataset.strip('“”"')
     logger.info(f"Starting inference for {task} using model {args.model}.")
 
-    dataset = load_dataset("gtfintechlab/CausalDetection", trust_remote_code=True)
+    dataset = load_dataset("anon_organization/CausalDetection", trust_remote_code=True)
 
     test_data = dataset["test"]  # type: ignore
     all_tokens = [data["tokens"] for data in test_data]  # type: ignore

@@ -16,7 +16,7 @@ def edtsum_inference(args):
     task = args.dataset.strip('“”"')
     logger.info(f"Starting inference for {task} using model {args.model}.")
 
-    dataset = load_dataset("gtfintechlab/EDTSum", trust_remote_code=True)
+    dataset = load_dataset("anon_organization/EDTSum", trust_remote_code=True)
 
     test_data = dataset["test"] # type: ignore
     all_documents = [data["text"] for data in test_data] # type: ignore

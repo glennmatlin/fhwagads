@@ -12,9 +12,9 @@ setup(
     name="flame",  # Replace with your actual project name
     version="0.1.0",
     description="FLaME",
-    author="Glenn Matlin",
-    author_email="gmatlin3@gatech.edu",
-    url="https://github.com/gtfintechlab/flame",  # Replace with your project's URL
+    author="anon",
+    author_email="anon",
+    url="anon",  # Replace with your project's URL
     packages=packages,
     package_dir={"": "src"},
     include_package_data=True,

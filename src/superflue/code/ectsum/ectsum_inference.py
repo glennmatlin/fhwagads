@@ -15,7 +15,7 @@ def ectsum_inference(args):
     task = args.dataset.strip('“”"')
     logger.info(f"Starting inference for {task} using model {args.model}.")
 
-    dataset = load_dataset("gtfintechlab/ECTSum", trust_remote_code=True)
+    dataset = load_dataset("anon_organization/ECTSum", trust_remote_code=True)
 
     documents = [row["context"] for row in dataset["test"]]  # type: ignore
     actual_labels = [row["response"] for row in dataset["test"]]  # type: ignore

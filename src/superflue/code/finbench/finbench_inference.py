@@ -15,7 +15,7 @@ logger = setup_logger(
 def finbench_inference(args):
     task = args.dataset.strip('“”"')
     logger.info(f"Starting inference for {task} using model {args.model}.")
-    dataset = load_dataset("gtfintechlab/finbench", trust_remote_code=True)
+    dataset = load_dataset("anon_organization/finbench", trust_remote_code=True)
 
     # Initialize lists to store actual labels and model responses
     llm_responses = []

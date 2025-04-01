@@ -26,7 +26,7 @@ def subjectiveqa_inference(args):
     task = args.dataset.strip('“”"')
     logger.info(f"Starting inference for {task} using model {args.model}.")
     try:
-        dataset = load_dataset("gtfintechlab/subjectiveqa", "5768", split="test", trust_remote_code=True)
+        dataset = load_dataset("anon_organization/subjectiveqa", "5768", split="test", trust_remote_code=True)
     except Exception as e:
         logger.error(f"Dataset loading failed: {e}")
         logger.error(traceback.format_exc())

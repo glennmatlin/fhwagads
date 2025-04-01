@@ -16,7 +16,7 @@ def fomc_inference(args):
     """Run FOMC inference with improved logging and error handling."""
     task = args.dataset.strip('“”"')
     logger.info(f"Starting inference for {task} using model {args.model}.")
-    dataset = load_dataset(f"gtfintechlab/fomc_communication", trust_remote_code=True)
+    dataset = load_dataset(f"anon_organization/fomc_communication", trust_remote_code=True)
     test_data = dataset["test"] # type: ignore
     
     # Initialize result containers

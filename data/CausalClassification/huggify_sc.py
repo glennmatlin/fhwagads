@@ -11,7 +11,7 @@ logger = setup_logger(
 
 # TODO: Cleanup and remove this code below get it from dotenv etc
 HUGGINGFACEHUB_API_TOKEN = os.getenv("HUGGINGFACEHUB_API_TOKEN")
-HF_ORGANIZATION = "gtfintechlab"
+HF_ORGANIZATION = "anon_organization"
 DATASET = "CausalClassification"
 login(HUGGINGFACEHUB_API_TOKEN)
 
