@@ -25,7 +25,7 @@ def bizbench_inference(args):
 
     # Load dataset
     logger.info("Loading dataset...")
-    dataset = load_dataset("glennmatlin/bizbench", trust_remote_code=True)
+    dataset = load_dataset("anon/bizbench", trust_remote_code=True)
 
     # Initialize lists to store actual labels and model responses
     X_question = []

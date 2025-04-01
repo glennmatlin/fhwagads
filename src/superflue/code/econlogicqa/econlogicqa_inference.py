@@ -24,7 +24,7 @@ def econlogicqa_inference(args):
 
     # Load dataset
     logger.info("Loading dataset...")
-    dataset = load_dataset("glennmatlin/econlogicqa", trust_remote_code=True)["test"]
+    dataset = load_dataset("anon/econlogicqa", trust_remote_code=True)["test"]
 
     # Initialize Together API client
     client = Together()
